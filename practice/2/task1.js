@@ -1,6 +1,11 @@
 function calcSum(data) {
-	//Change this function
-	return 0;
+    if(!data.length || !Array.isArray(data)) {
+        return 0;
+    }
+
+    return data.reduce((sum, curr, index) =>
+        sum + ((index % 2) ? 0 : curr)
+    ) * data[data.length - 1];
 }
 
 function assertEqual(expectedVal, actualVal, message) {

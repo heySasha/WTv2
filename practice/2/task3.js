@@ -1,6 +1,25 @@
 function getTopLetter(text) {
-    //Change this function
-    return text[0];
+
+    const obj = Object.create(null);
+
+    for(let word of text) {
+        if (!(word in obj)) {
+            obj[word] = 1;
+        } else {
+            obj[word]++;
+        }
+    }
+
+    let maxKey, maxCount = 0;
+    for(let key in obj) {
+        let count = obj[key];
+        if (count > maxCount) {
+            maxKey = key;
+            maxCount = count;
+        }
+    }
+
+    return maxKey;
 }
 
 function assertAnswerInArray(expectedArray, actualVal, message) {

@@ -1,6 +1,20 @@
 function getStats(data) {
-	//Change this function
-	return [0, 0, 0];
+
+    if (data.length === 0)
+        return [0, 0, 0];
+
+    let arr = [];
+	let res = data.reduce((arr, curr) => {
+
+	    if(curr > arr[0]) arr[0] = curr;
+	    if(curr < arr[1]) arr[1] = curr;
+	    arr[2] += curr;
+
+	    return arr;
+    }, [data[0], data[0], 0]);
+    res[2] /= data.length;
+    return res;
+
 }
 
 function assertEqualArrays(expectedVal, actualVal, message) {

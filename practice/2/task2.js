@@ -1,6 +1,22 @@
 function filterUnique(data) {
-	//Change this function
-	return [];
+    // false
+	const filterData = [];
+
+	const len = data.length;
+	beg: for (let i = 0; i < len; i++) {
+
+	    for (let j = 0; j < len; j++) {
+
+	        if (i !== j) {
+                if (data[i] === data[j]) {
+                    continue beg;
+                }
+            }
+        }
+        filterData.push(data[i]);
+    }
+
+    return filterData;
 }
 
 function assertEqualArrays(expectedVal, actualVal, message) {
