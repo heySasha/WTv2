@@ -1,24 +1,46 @@
+function getItemPolynomial(prev, cur, ind, arr) {
+
+    let step = arr.length - ind - 1;
+
+    let koef, stepView; // біля x
+
+    if (!cur) {
+        return prev;
+    } else if (cur < 0) {
+        if (cur === -1) {
+            koef = '-';
+        } else {
+            koef = +cur;
+        }
+    } else {
+        if (cur === 1) {
+            koef = '+';
+        } else {
+            koef = `+${cur}`;
+        }
+    }
+
+
+
+    if (!step) {
+        stepView = '';
+    } else if (step === 1) {
+        stepView = 'x';
+    } else {
+        stepView = `x^${step}`;
+    }
+
+    //return `${prev}${cur<0 ? '' : '+'}${cur ? `${cur}*x` : ''}${(step!==1) ? `^${step}` : ''}`;
+
+    return `${prev}${koef}${stepView}`;
+
+}
+
 function getPolynomial(...arg) {
 
 
-    let len = arg.length - 1;
-    let res = arg.reduce((prev, cur, ind) => {
-
-        let step = len - ind;
-
-        if (!cur) {
-            return prev;
-        }
-        if (cur === 1 || cur === -1) {
-            return `${prev}${cur<0 ? '-' : '+'}x${(step!==1) ? `^${step}` : ''}`;
-        }
-        if (!step) {
-            return `${prev}${cur<0 ? '-' : '+'}${cur !== 1 ? cur : ''}`;
-        }
-
-       return `${prev}${cur<0 ? '-' : '+'}${cur ? `${cur}*x` : ''}${(step!==1) ? `^${step}` : ''}`;
-
-    }, '');
+    //let len = arg.length - 1;
+    let res = arg.reduce(getItemPolynomial, '');
 
     return res === '' ? '0' : res.slice(1);
 }
