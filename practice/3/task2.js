@@ -2,11 +2,13 @@ function getItemPolynomial(prev, cur, ind, arr) {
 
     let step = arr.length - ind - 1;
 
-    let koef, stepView; // біля x
+    let koef, stepView;
 
     if (!cur) {
         return prev;
-    } else if (cur < 0) {
+    }
+
+    if (cur < 0) {
         if (cur === -1) {
             koef = '-';
         } else {
@@ -20,17 +22,15 @@ function getItemPolynomial(prev, cur, ind, arr) {
         }
     }
 
-
-
     if (!step) {
-        stepView = '';
-    } else if (step === 1) {
-        stepView = 'x';
-    } else {
-        stepView = `x^${step}`;
+        return prev + (cur < 0 ? cur : '+'+cur);
     }
 
-    //return `${prev}${cur<0 ? '' : '+'}${cur ? `${cur}*x` : ''}${(step!==1) ? `^${step}` : ''}`;
+    if (step === 1) {
+        stepView = Math.abs(cur) === 1 ? 'x' : '*x';
+    } else {
+        stepView = Math.abs(cur) === 1 ? `x^${step}` : `*x^${step}`;
+    }
 
     return `${prev}${koef}${stepView}`;
 
@@ -38,11 +38,9 @@ function getItemPolynomial(prev, cur, ind, arr) {
 
 function getPolynomial(...arg) {
 
-
-    //let len = arg.length - 1;
     let res = arg.reduce(getItemPolynomial, '');
 
-    return res === '' ? '0' : res.slice(1);
+    return (res === '') ? '0' : ( (res[0] === '+') ? res.slice(1) : res );
 }
 
 
