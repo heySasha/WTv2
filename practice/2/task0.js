@@ -3,7 +3,6 @@ function getStats(data) {
     if (data.length === 0)
         return [0, 0, 0];
 
-    let arr = [];
 	let res = data.reduce((arr, curr) => {
 
 	    if(curr > arr[0]) arr[0] = curr;
