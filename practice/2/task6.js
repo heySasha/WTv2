@@ -1,8 +1,70 @@
 function lifeCounter(matrix, numSteps) {
-    //Change this function
+
+    let life = new Set();
+
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[0].length; j++) {
+            if (matrix[i][j]) {
+                life.add(`${i},${j}`)
+            }
+        }
+    }
+
+    life.reduce((res, item)=>{
+
+    });
+
+    console.log(Array.from(life));
+
     return 0;
 }
 
+function lifeCounterTest(matrix, numSteps) {
+
+    let life = Object.create(null);
+
+
+
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[0].length; j++) {
+            if (matrix[i][j]) {
+                life.add(`${i},${j}`)
+            }
+        }
+    }
+
+    life.reduce((res, item)=>{
+
+    });
+
+    console.log(Array.from(life));
+
+    return 0;
+}
+
+function countLife(value, set) {
+    let [row, col] = item.split(',');
+
+    let count = 0;
+
+    if (set.has(`${row},${col+1}`)) count++;
+    if (set.has(`${row},${col-1}`)) count++;
+    if (set.has(`${row-1},${col-1}`)) count++;
+    if (set.has(`${row-1},${col}`)) count++;
+    if (set.has(`${row-1},${col+1}`)) count++;
+    if (set.has(`${row+1},${col-1}`)) count++;
+    if (set.has(`${row+1},${col}`)) count++;
+    if (set.has(`${row+1},${col+1}`)) count++;
+
+    return count;
+}
+
+
+lifeCounter([[0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0, 0],
+    [1, 1, 1, 0, 0, 0, 0]], 4);
+
+/*
 function assertEqual(actualVal, expectedVal, message) {
     if(expectedVal === actualVal) {
         console.log("+", message);
@@ -168,3 +230,4 @@ function runTask6() {
 }
 
 runTask6();
+*/
