@@ -1,19 +1,22 @@
 function getSongs(data) {
 
     const notNullSize = data.filter(item => item.size > 0);
-    const mp3Only = notNullSize.data.filter(isMp3);
+    const mp3Only = notNullSize.filter(isMp3);
+
+    const res = mp3Only.reduce((all, item) => {
+        let [artist, song] = item.filename.split(' - ');
+
+         return [ ...all, [artist, song.slice(0, song.lastIndexOf('.'))] ];
+    }, []);
 
 
-
-    return [];
+    return res;
 }
 
 function isMp3(value) {
-    let format = value.split('.');
+    let format = value.filename.split('.');
     format = format[format.length - 1];
-    if (format.toUpperCase() === 'MP3')
-        return true;
-    return false;
+    return format.toUpperCase() === 'MP3';
 }
 
 function assertEqual(expectedVal, actualVal, message) {

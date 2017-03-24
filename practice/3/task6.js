@@ -1,24 +1,8 @@
 function getTransposed(matrix) {
-
-    return matrix.reduce((prevRow, row) => {
-        return row.reduce((prevItem, item, indexItem) => {
-
-
-
-        }, [])
-    }, []);
-
+    return matrix[0].map((col, i) => matrix.map(row => row[i]));
 }
 
 
-let m = [
-    [1, 2, 3],
-    [4, 5, 6]
-];
-
-console.log( getTransposed(m) );
-
-/*
 function assertEqualMatrix(expectedVal, actualVal, message) {
     if(matrixEqual(expectedVal, actualVal)) {
         console.log("+", message);
@@ -116,4 +100,3 @@ function runTask6() {
 }
 
 runTask6();
-*/
