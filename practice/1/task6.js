@@ -26,10 +26,10 @@ function runTask6() {
 	assert(getFreeSpace(81, 24, 12) ==  216, "Case #2 (b)");
 	assert(getNumSquares(19, 89, 14) ==  6, "Case #3 (a)");
 	assert(getFreeSpace(19, 89, 14) ==  515, "Case #3 (b)");
-	assert(getNumSquares(37, 47, 10) ==  12, "Case #4 (a)");
-	assert(getFreeSpace(37, 47, 10) ==  539, "Case #4 (b)");
-	assert(getNumSquares(83, 90, 11) ==  56, "Case #5 (a)");
-	assert(getFreeSpace(83, 90, 11) ==  694, "Case #5 (b)");
+	assert(getNumSquares(37, 47, 10) ==  12, "Case #oop_practice (a)");
+	assert(getFreeSpace(37, 47, 10) ==  539, "Case #oop_practice (b)");
+	assert(getNumSquares(83, 90, 11) ==  56, "Case #4 (a)");
+	assert(getFreeSpace(83, 90, 11) ==  694, "Case #4 (b)");
 	assert(getNumSquares(31, 83, 20) ==  4, "Case #6 (a)");
 	assert(getFreeSpace(31, 83, 20) ==  973, "Case #6 (b)");
 	assert(getNumSquares(45, 35, 13) ==  6, "Case #7 (a)");

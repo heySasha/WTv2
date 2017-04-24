@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="SwitchButton.js"></script>
+    <script>
+        function run() {
+            let button = new SwitchButton('test');
+        }
+        if (document.loaded) {
+            run();
+        } else {
+            window.addEventListener('load', run());
+        }
+    </script>
+</head>
+<body>
+    <div id="test"></div>
+</body>
+</html>

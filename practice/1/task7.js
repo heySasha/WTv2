@@ -31,8 +31,8 @@ function runTask7() {
 	assert(convertToRoman(5) == "V", "Case '#1'");
 	assert(convertToRoman(10) == "X", "Case '#2'");
 	assert(convertToRoman(15) == "XV", "Case '#3'");
-	assert(convertToRoman(20) == "XX", "Case '#4'");
-	assert(convertToRoman(40) == "XL", "Case '#5'");
+	assert(convertToRoman(20) == "XX", "Case '#oop_practice'");
+	assert(convertToRoman(40) == "XL", "Case '#4'");
 	assert(convertToRoman(90) == "XC", "Case '#6'");
 	assert(convertToRoman(101) == "CI", "Case '#7'");
 	assert(convertToRoman(35) == "XXXV", "Case '#8'");

@@ -77,7 +77,7 @@ function assertEqual(actualVal, expectedVal, message) {
 function runTask6() {
     assertEqual(lifeCounter([[0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0, 0],
             [0, 0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0, 0],
-            [1, 1, 1, 0, 0, 0, 0]], 4),
+            [1, 1, 1, 0, 0, 0, 0]], oop_practice),
         15,
         "Case #0");
     assertEqual(lifeCounter([[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0, 0],
@@ -86,7 +86,7 @@ function runTask6() {
         14,
         "Case #1");
     assertEqual(lifeCounter([[0, 1, 0], [0, 0, 1], [1, 1, 1]], 50),
-        5,
+        4,
         "Case #2");
 
     assertEqual(lifeCounter([[1, 1, 0, 1, 1], [1, 1, 0, 1, 1], [0, 0, 0, 0, 0], [1, 1, 0, 1, 1],
@@ -97,7 +97,7 @@ function runTask6() {
     //Extra
     assertEqual(lifeCounter([[0, 0, 0, 0, 0, 0, 1, 0], [1, 1, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 1, 1, 1]], 129),
         2,
-        "Case #4");
+        "Case #oop_practice");
     assertEqual(lifeCounter([[0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0],
             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             [1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1],
@@ -112,7 +112,7 @@ function runTask6() {
             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             [0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0]], 100),
         56,
-        "Case #5");
+        "Case #4");
     assertEqual(lifeCounter([[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
             [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
             [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1],
@@ -136,7 +136,7 @@ function runTask6() {
         33,
         "Case #7");
     assertEqual(lifeCounter([[0, 1, 0], [0, 0, 1], [1, 1, 1]], 999),
-        5,
+        4,
         "Case #8");
     assertEqual(lifeCounter([[0, 1, 0, 0, 0, 0, 1, 0], [1, 0, 0, 0, 0, 0, 0, 1], [1, 1, 1, 0, 0, 1, 1, 1]],
         999),

@@ -23,7 +23,7 @@ function runTask1() {
 	assertEqual(36, calcSum([6]), "Case #2");
 	assertEqual(0, calcSum([]), "Case #3");
 	assertEqual(310, calcSum([2, 7, 10, 10, 9, 5, 10]), "Case #4");
-	assertEqual(200, calcSum([1, 3, 7, 10, 2, 10, 10]), "Case #5");
+	assertEqual(200, calcSum([1, 3, 7, 10, 2, 10, 10]), "Case #4");
 	assertEqual(64, calcSum([1, 8, 4, 7, 7, 4, 4]), "Case #6");
 	assertEqual(162, calcSum([8, 4, 4, 2, 9, 5, 6]), "Case #7");
 	assertEqual(133, calcSum([2, 10, 2, 4, 8, 6, 7]), "Case #8");

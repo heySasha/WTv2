@@ -29,7 +29,7 @@ function runTask7() {
     assertEqual(getSafePawns(new Set(['b4', 'c4', 'd4', 'e4', 'f4', 'g4', 'e5'])), 1, "Case #2");
     assertEqual(getSafePawns(new Set(['e4'])), 0, "Case #3");
     assertEqual(getSafePawns(new Set(['e8'])), 0, "Case #4");
-    assertEqual(getSafePawns(new Set(['a1', 'b2', 'c3', 'd4', 'e5', 'f6', 'g7', 'h8'])), 7, "Case #5");
+    assertEqual(getSafePawns(new Set(['a1', 'b2', 'c3', 'd4', 'e5', 'f6', 'g7', 'h8'])), 7, "Case #4");
     assertEqual(getSafePawns(new Set(['a8', 'b7', 'c6', 'd5', 'e4', 'f3', 'g2', 'h1'])), 7, "Case #6");
     assertEqual(getSafePawns(new Set(['a1', 'b2', 'c3', 'd4', 'e5', 'f6', 'g7', 'h8'])), 7, "Case #7");
     assertEqual(getSafePawns(new Set(['a2', 'b2', 'c2', 'd2', 'e2', 'f2', 'g2', 'h2'])), 0, "Case #8");

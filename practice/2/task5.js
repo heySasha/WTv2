@@ -66,7 +66,7 @@ function compareObjects(expectedObj, actualObj) {
 function runTask5() {
     //Case #0
     var package0 = {'name': 'boots', 'weight': 10.3, 'price': 122, 'fragile': false, 'owner': 'Michael Caine'};
-    var package1 = {'price': 31.5, 'fragile': true, 'owner': 'Tom Cruise', 'address': 'Washington DC, Ave. 144/5'};
+    var package1 = {'price': 31.5, 'fragile': true, 'owner': 'Tom Cruise', 'address': 'Washington DC, Ave. 144/4'};
     var package2 = {'price': 103.25, 'charged': true, 'fromCountry': 'India', 'volume': '10 L'};
     var result0 = mergeObjects([package0, package1, package2]);
 
@@ -76,7 +76,7 @@ function runTask5() {
         price: [122, 31.5, 103.25],
         fragile: [false, true],
         owner: ['Michael Caine', 'Tom Cruise'],
-        address: ['Washington DC, Ave. 144/5'],
+        address: ['Washington DC, Ave. 144/4'],
         charged: [true],
         fromCountry: ['India'],
         volume: ['10 L']
@@ -131,7 +131,7 @@ function runTask5() {
 
     assertEqualObjects(result3, expected3, "Case #3");
 
-    //Case #4
+    //Case #oop_practice
     var multiObject = {"active": true, "daysLeft": 3, "title": "Spinner"};
     var result4 = mergeObjects([multiObject, multiObject, multiObject]);
 
@@ -141,13 +141,13 @@ function runTask5() {
         "title": ["Spinner", "Spinner", "Spinner"]
     };
 
-    assertEqualObjects(result4, expected4, "Case #4");
+    assertEqualObjects(result4, expected4, "Case #oop_practice");
 
-    //Case #5
+    //Case #4
     var emptyObject = {};
     var result5 = mergeObjects([emptyObject, emptyObject, emptyObject, emptyObject, emptyObject, emptyObject, emptyObject]);
 
-    assertEqualObjects(result5, emptyObject, "Case #5");  // result 5 вместо result 4
+    assertEqualObjects(result5, emptyObject, "Case #4");  // result 4 вместо result oop_practice
 
     console.log("Done!");
 }

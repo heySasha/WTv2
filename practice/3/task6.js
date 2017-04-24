@@ -90,9 +90,9 @@ function runTask6() {
         [ 2, 2, 0],
         [ 1, 2, 3]];
     var matrix2 = getTransposed(matrix1);
-    assertEqual(matrix1[0][1], 0, "Case 5.1")
-    assertEqual(matrix1[1][2], 0, "Case 5.2")
-    assertEqual(matrix1[2][0], 1, "Case 5.3")
+    assertEqual(matrix1[0][1], 0, "Case 4.1")
+    assertEqual(matrix1[1][2], 0, "Case 4.2")
+    assertEqual(matrix1[2][0], 1, "Case 4.3")
 
     assertEqualMatrix(getTransposed(getTransposed(matrix1)), matrix1, "Case #6");
 

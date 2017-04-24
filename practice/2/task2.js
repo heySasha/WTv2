@@ -45,7 +45,7 @@ function runTask2() {
 	assertEqualArrays([3, 14, 15, 92, 6, 5, 35], filterUnique([3, 14, 15, 92, 6, 5, 35]), "Case #2");
 	assertEqualArrays([], filterUnique([8, 2, 2, 3, 8, 2, 2, 3]), "Case #3");
 	assertEqualArrays([9, 3, 5, 1], filterUnique([9, 8, 3, 5, 10, 1, 10, 10, 10, 8]), "Case #4");
-	assertEqualArrays([6, 7, 5], filterUnique([8, 6, 10, 0, 7, 0, 5, 8, 8, 10]), "Case #5");
+	assertEqualArrays([6, 7, 5], filterUnique([8, 6, 10, 0, 7, 0, 5, 8, 8, 10]), "Case #4");
 	assertEqualArrays([2, 7, 9, 4], filterUnique([8, 2, 10, 8, 10, 7, 9, 1, 4, 1]), "Case #6");
 	assertEqualArrays([3, 6, 9, 10], filterUnique([7, 7, 3, 0, 0, 6, 9, 0, 7, 10]), "Case #7");
 	assertEqualArrays([3, 5, 0, 1, 8], filterUnique([10, 2, 2, 2, 3, 5, 0, 1, 8, 10]), "Case #8");

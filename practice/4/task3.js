@@ -13,22 +13,33 @@ class SwitchButton {
         } else {
             options = [];
         }
+
         this.options = options;
 
         let defaultValue = div.dataset.defaultValue;
 
         this.inputElement = document.createElement('input');
         this.inputElement.type = 'button';
+        this.inputElement.onclick = () => { this.switchValue() };
+
+        //this.label = document.createElement('label');
         // сначала проверить в localStorage
         this.setValue( (window.localStorage[`${elementId}_SwitchButton`])
-                    ? window.localStorage[`${elementId}_SwitchButton`]
-                    : (defaultValue)
-                        ? defaultValue
-                        : options.length
-                            ? options[0]
-                            : 'None' );
+            ? window.localStorage[`${elementId}_SwitchButton`]
+            : (defaultValue)
+                ? defaultValue
+                : options.length
+                    ? options[0]
+                    : 'None' );
 
-        div.appendChild(this.inputElement);
+        div.appendChild( this.inputElement );
+    }
+
+    static createButtons() {
+        const divs = document.querySelectorAll('div[data-widget="SwitchButton"]');
+        for (let div of divs) {
+            new SwitchButton(div.id);
+        }
     }
 
     getValue() {
@@ -36,6 +47,7 @@ class SwitchButton {
     }
 
     setValue(text) {
+        this.inputElement.textContent = text;
         this.inputElement.value  = text;
     }
 

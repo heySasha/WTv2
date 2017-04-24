@@ -128,7 +128,7 @@ getTransposed([[-2, -1, 0, 1],
 
 ```javascript
 var package0 = {'name': 'boots', 'weight': 10.3, 'price': 122, 'fragile': false, 'owner': 'Michael Caine'};
-var package1 = {'price': 31.5, 'fragile': true, 'owner': 'Tom Cruise', 'address': 'Washington DC, Ave. 144/5'};
+var package1 = {'price': 31.5, 'fragile': true, 'owner': 'Tom Cruise', 'address': 4};
 var package2 = {'price': 103.25, 'charged': true, 'fromCountry': 'India', 'volume': '10 L'};
 var result = mergeObjects([package0, package1, package2]);
 ```
@@ -142,7 +142,7 @@ var result = {
     price: [122, 31.5, 103.25],
     fragile: [false, true],
     owner: ['Michael Caine', 'Tom Cruise'],
-    address: ['Washington DC, Ave. 144/5'],
+    address: [4],
     charged: [true],
     fromCountry: ['India'],
     volume: ['10 L']

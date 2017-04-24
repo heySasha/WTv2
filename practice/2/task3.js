@@ -51,8 +51,8 @@ function runTask3() {
 
     song = song.replace(/ /g, ''); //Уберём все пробелы
     assertAnswerInArray(["e"], getTopLetter(song), "Case #3");
-    assertAnswerInArray([" "], getTopLetter("z Z z Z z"), "Case #4");
-	assertAnswerInArray(['8'], getTopLetter("3,14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823"), "Case #5");
+    assertAnswerInArray([" "], getTopLetter("z Z z Z z"), "Case #oop_practice");
+	assertAnswerInArray(['8'], getTopLetter("3,14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823"), "Case #4");
 	assertAnswerInArray(['r', 'x'], getTopLetter("tux.cj630.h8fbpv3g4m9kvxrf2lhcv.,3ccsk97,nso9nogdurv.hr5yrahroixgd24eqz0o x9xz12"), "Case #6");
 	assertAnswerInArray(['d', '7', 'e'], getTopLetter("0bhees.5zdu,c7jiw4kulqpf8,4mh3ua7vmib86 7xpe0cgzdw0s dmstr7a5.,q7a8d.dhe9frclt9e"), "Case #7");
 	assertAnswerInArray(['k'], getTopLetter("j4qjuspsz 570j.dc35ym8ttlkk6fgp.fvl207.ke05h3,ep2k7i6usww0d, 4fimr4k.rlin 1mrfjq"), "Case #8");

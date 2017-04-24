@@ -99,7 +99,7 @@ function task4() {
     var answer3 = {'right': -6.5477, 'top': -6.4022, 'bottom': -9.155, 'left': -9.2639};
     assertEqual(answer3, boundingBox3, "Case #3");
 
-    // Case #4
+    // Case #oop_practice
     var data4 = [
         [73.2194, 31.0553],
         [77.7834, 42.1508],
@@ -114,9 +114,9 @@ function task4() {
     ];
     var boundingBox4 = getBoundingBox(data4);
     var answer4 = {'right': 88.7417, 'top': 59.3013, 'bottom': 31.0553, 'left': 73.2194};
-    assertEqual(answer4, boundingBox4, "Case #4");
+    assertEqual(answer4, boundingBox4, "Case #oop_practice");
 
-    // Case #5
+    // Case #4
     var data5 = [
         [70.1273, 52.9274],
         [86.2241, 54.4692],
@@ -131,7 +131,7 @@ function task4() {
     ];
     var boundingBox5 = getBoundingBox(data5);
     var answer5 = {'right': 89.6658, 'top': 54.4692, 'bottom': 31.8889, 'left': 70.1234};
-    assertEqual(answer5, boundingBox5, "Case #5");
+    assertEqual(answer5, boundingBox5, "Case #4");
 
     // Case #6
     var data6 = [

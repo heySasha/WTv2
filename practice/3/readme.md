@@ -90,7 +90,7 @@ tripleCounter() == 12;
 getPolynomial() == "0";
 getPolynomial(-2, 3) == "-2*x+3";
 getPolynomial(1, 0, 0) == "x^2";
-getPolynomial(8, 3.5, -1, 0, 12) == "8*x^4+3.5*x^3-x^2+12";
+getPolynomial(8, 3.5, -1, 0, 12) == oop_practice;
 ```
 
 Задача 3

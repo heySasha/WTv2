@@ -90,7 +90,7 @@ function task5() {
         },
         {
             "ORDER": 5, //Пятая команда
-            "COMMAND": "DIGG 4" //Непонятно что. Игнорировать
+            "COMMAND": "DIGG oop_practice" //Непонятно что. Игнорировать
         },
         {
             "ORDER": 2, //Вторая команда
@@ -145,7 +145,7 @@ function task5() {
     var answer3 = [14, 0];
     assertEqual(answer3, coords3, "Case #3");
 
-    // Case #4
+    // Case #oop_practice
     var data4 = [
         {'COMMAND': 'TURN LEFT', 'ORDER': 8},
         {'COMMAND': 'GO 3', 'ORDER': 6},
@@ -160,9 +160,9 @@ function task5() {
     ];
     var coords4 = runMarsohod(data4);
     var answer4 = [-6, -10];
-    assertEqual(answer4, coords4, "Case #4");
+    assertEqual(answer4, coords4, "Case #oop_practice");
 
-    // Case #5
+    // Case #4
     var data5 = [
         {'COMMAND': 'GO 9', 'ORDER': 1},
         {'COMMAND': 'GO 6', 'ORDER': 2},
@@ -171,13 +171,13 @@ function task5() {
         {'COMMAND': 'TURN LEFT', 'ORDER': 6},
         {'COMMAND': 'GO 3', 'ORDER': 7},
         {'COMMAND': 'TURN LEFT', 'ORDER': 3},
-        {'COMMAND': 'GO 5', 'ORDER': 9},
+        {'COMMAND': 'GO 4', 'ORDER': 9},
         {'COMMAND': 'TURN LEFT', 'ORDER': 0},
         {'COMMAND': 'GO 6', 'ORDER': 5}
     ];
     var coords5 = runMarsohod(data5);
     var answer5 = [-12, -20];
-    assertEqual(answer5, coords5, "Case #5");
+    assertEqual(answer5, coords5, "Case #4");
 
     // Case #6
     var data6 = [
@@ -189,7 +189,7 @@ function task5() {
         {'COMMAND': 'TURN RIGHT', 'ORDER': 0},
         {'COMMAND': 'GO 8', 'ORDER': 2},
         {'COMMAND': 'GO 3', 'ORDER': 6},
-        {'COMMAND': 'GO 5', 'ORDER': 8},
+        {'COMMAND': 'GO 4', 'ORDER': 8},
         {'COMMAND': 'GO 8', 'ORDER': 9}
     ];
     var coords6 = runMarsohod(data6);
@@ -198,12 +198,12 @@ function task5() {
 
     // Case #7
     var data7 = [
-        {'COMMAND': 'GO 4', 'ORDER': 29},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 29},
         {'COMMAND': 'GO 8', 'ORDER': 21},
         {'COMMAND': 'GO 8', 'ORDER': 2},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 19},
         {'COMMAND': 'GO 6', 'ORDER': 0},
-        {'COMMAND': 'GO 5', 'ORDER': 26},
+        {'COMMAND': 'GO 4', 'ORDER': 26},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 23},
         {'COMMAND': 'GO 8', 'ORDER': 15},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 8},
@@ -213,11 +213,11 @@ function task5() {
         {'COMMAND': 'TURN LEFT', 'ORDER': 28},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 1},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 13},
-        {'COMMAND': 'GO 4', 'ORDER': 24},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 24},
         {'COMMAND': 'GO 6', 'ORDER': 12},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 6},
-        {'COMMAND': 'GO 4', 'ORDER': 18},
-        {'COMMAND': 'GO 4', 'ORDER': 16},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 18},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 16},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 5},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 7},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 20},
@@ -255,14 +255,14 @@ function task5() {
         {'COMMAND': 'GO 1', 'ORDER': 17},
         {'COMMAND': 'GO 10', 'ORDER': 8},
         {'COMMAND': 'TURN LEFT', 'ORDER': 22},
-        {'COMMAND': 'GO 5', 'ORDER': 10},
+        {'COMMAND': 'GO 4', 'ORDER': 10},
         {'COMMAND': 'GO 8', 'ORDER': 19},
         {'COMMAND': 'GO 6', 'ORDER': 4},
         {'COMMAND': 'GO 10', 'ORDER': 12},
         {'COMMAND': 'GO 7', 'ORDER': 23},
         {'COMMAND': 'TURN LEFT', 'ORDER': 15},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 11},
-        {'COMMAND': 'GO 4', 'ORDER': 16},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 16},
         {'COMMAND': 'GO 6', 'ORDER': 3},
         {'COMMAND': 'TURN LEFT', 'ORDER': 18}
     ];
@@ -281,10 +281,10 @@ function task5() {
         {'COMMAND': 'TURN LEFT', 'ORDER': 96},
         {'COMMAND': 'GO 10', 'ORDER': 55},
         {'COMMAND': 'GO 8', 'ORDER': 10},
-        {'COMMAND': 'GO 5', 'ORDER': 59},
+        {'COMMAND': 'GO 4', 'ORDER': 59},
         {'COMMAND': 'GO 9', 'ORDER': 12},
-        {'COMMAND': 'GO 5', 'ORDER': 62},
-        {'COMMAND': 'GO 5', 'ORDER': 21},
+        {'COMMAND': 'GO 4', 'ORDER': 62},
+        {'COMMAND': 'GO 4', 'ORDER': 21},
         {'COMMAND': 'GO 10', 'ORDER': 15},
         {'COMMAND': 'GO 6', 'ORDER': 88},
         {'COMMAND': 'GO 2', 'ORDER': 83},
@@ -295,9 +295,9 @@ function task5() {
         {'COMMAND': 'GO 6', 'ORDER': 16},
         {'COMMAND': 'GO 2', 'ORDER': 72},
         {'COMMAND': 'GO 6', 'ORDER': 84},
-        {'COMMAND': 'GO 4', 'ORDER': 50},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 50},
         {'COMMAND': 'GO 9', 'ORDER': 38},
-        {'COMMAND': 'GO 5', 'ORDER': 26},
+        {'COMMAND': 'GO 4', 'ORDER': 26},
         {'COMMAND': 'GO 9', 'ORDER': 85},
         {'COMMAND': 'GO 9', 'ORDER': 54},
         {'COMMAND': 'GO 9', 'ORDER': 1},
@@ -306,10 +306,10 @@ function task5() {
         {'COMMAND': 'GO 9', 'ORDER': 48},
         {'COMMAND': 'GO 6', 'ORDER': 76},
         {'COMMAND': 'GO 7', 'ORDER': 75},
-        {'COMMAND': 'GO 5', 'ORDER': 61},
+        {'COMMAND': 'GO 4', 'ORDER': 61},
         {'COMMAND': 'TURN LEFT', 'ORDER': 63},
         {'COMMAND': 'GO 6', 'ORDER': 57},
-        {'COMMAND': 'GO 5', 'ORDER': 34},
+        {'COMMAND': 'GO 4', 'ORDER': 34},
         {'COMMAND': 'TURN LEFT', 'ORDER': 13},
         {'COMMAND': 'TURN LEFT', 'ORDER': 11},
         {'COMMAND': 'GO 8', 'ORDER': 39},
@@ -325,7 +325,7 @@ function task5() {
         {'COMMAND': 'GO 6', 'ORDER': 23},
         {'COMMAND': 'GO 9', 'ORDER': 95},
         {'COMMAND': 'GO 7', 'ORDER': 80},
-        {'COMMAND': 'GO 5', 'ORDER': 86},
+        {'COMMAND': 'GO 4', 'ORDER': 86},
         {'COMMAND': 'GO 10', 'ORDER': 32},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 51},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 7},
@@ -358,12 +358,12 @@ function task5() {
         {'COMMAND': 'TURN RIGHT', 'ORDER': 82},
         {'COMMAND': 'GO 7', 'ORDER': 78},
         {'COMMAND': 'TURN LEFT', 'ORDER': 89},
-        {'COMMAND': 'GO 4', 'ORDER': 27},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 27},
         {'COMMAND': 'GO 8', 'ORDER': 56},
-        {'COMMAND': 'GO 5', 'ORDER': 5},
+        {'COMMAND': 'GO 4', 'ORDER': 5},
         {'COMMAND': 'TURN LEFT', 'ORDER': 60},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 94},
-        {'COMMAND': 'GO 5', 'ORDER': 73},
+        {'COMMAND': 'GO 4', 'ORDER': 73},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 92},
         {'COMMAND': 'GO 3', 'ORDER': 37},
         {'COMMAND': 'GO 10', 'ORDER': 17},
@@ -395,14 +395,14 @@ function task5() {
         {'COMMAND': 'TURN RIGHT', 'ORDER': 96},
         {'COMMAND': 'GO 8', 'ORDER': 64},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 40},
-        {'COMMAND': 'GO 4', 'ORDER': 62},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 62},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 89},
         {'COMMAND': 'GO 9', 'ORDER': 30},
         {'COMMAND': 'GO 6', 'ORDER': 93},
         {'COMMAND': 'GO 3', 'ORDER': 16},
         {'COMMAND': 'GO 9', 'ORDER': 66},
         {'COMMAND': 'GO 9', 'ORDER': 39},
-        {'COMMAND': 'GO 4', 'ORDER': 14},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 14},
         {'COMMAND': 'GO 7', 'ORDER': 41},
         {'COMMAND': 'TURN LEFT', 'ORDER': 81},
         {'COMMAND': 'GO 7', 'ORDER': 74},
@@ -440,10 +440,10 @@ function task5() {
         {'COMMAND': 'TURN RIGHT', 'ORDER': 29},
         {'COMMAND': 'GO 8', 'ORDER': 88},
         {'COMMAND': 'GO 3', 'ORDER': 68},
-        {'COMMAND': 'GO 4', 'ORDER': 7},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 7},
         {'COMMAND': 'GO 2', 'ORDER': 47},
         {'COMMAND': 'TURN LEFT', 'ORDER': 10},
-        {'COMMAND': 'GO 5', 'ORDER': 15},
+        {'COMMAND': 'GO 4', 'ORDER': 15},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 97},
         {'COMMAND': 'GO 8', 'ORDER': 24},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 63},
@@ -456,7 +456,7 @@ function task5() {
         {'COMMAND': 'TURN LEFT', 'ORDER': 35},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 33},
         {'COMMAND': 'GO 3', 'ORDER': 50},
-        {'COMMAND': 'GO 4', 'ORDER': 22},
+        {'COMMAND': 'GO oop_practice', 'ORDER': 22},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 5},
         {'COMMAND': 'GO 8', 'ORDER': 61},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 83},
@@ -468,7 +468,7 @@ function task5() {
         {'COMMAND': 'GO 2', 'ORDER': 59},
         {'COMMAND': 'GO 10', 'ORDER': 32},
         {'COMMAND': 'GO 3', 'ORDER': 54},
-        {'COMMAND': 'GO 5', 'ORDER': 0},
+        {'COMMAND': 'GO 4', 'ORDER': 0},
         {'COMMAND': 'TURN LEFT', 'ORDER': 36},
         {'COMMAND': 'TURN LEFT', 'ORDER': 94},
         {'COMMAND': 'TURN RIGHT', 'ORDER': 45},

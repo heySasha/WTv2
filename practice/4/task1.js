@@ -1,74 +1,41 @@
-class SkyWalker {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-
-    }
-
-    moveUp() {
-        this.y++;
-        SkyWalker._numMoves++;
-        return this;
-    }
-
-    moveDown() {
-        this.y--;
-        SkyWalker._numMoves++;
-        return this;
-    }
-
-    moveLeft() {
-        this.x--;
-        SkyWalker._numMoves++;
-        return this;
-    }
-
-    moveRight() {
-        this.x++;
-        SkyWalker._numMoves++;
-        return this;
-    }
-
-    get x() {
-        return this._x;
-    }
-
-    set x(v) {
-        if (typeof  v !== 'number') {
-            throw Error('Invalid type');
+function filterTable(tableId, filterData) {
+    //let tableElement = document.getElementById(tableId);
+    let tableRows = document.querySelectorAll("table tr");
+    /*
+    for (let rowElement of tableRows) {
+        if ( rowSatisfyFilter(rowElement, filterData) ) {
+            // Убрать CSS класс "hidden"
+            rowElement.classList.remove('hidden');
+        } else {
+            // Добавить CSS класс "hidden"
+            rowElement.classList.add('hidden');
         }
-        this._x = v;
     }
+    */
+    tableRows.forEach(rowElement =>
+        rowSatisfyFilter(rowElement, filterData) ? rowElement.classList.remove('hidden') : rowElement.classList.add('hidden')
+    );
 
-    get y() {
-        return this._y;
-    }
-
-    set y(v) {
-        if (typeof  v !== 'number') {
-            throw Error('Invalid type');
-        }
-        this._y = v;
-    }
-
-    equals(walker) {
-        return this.x === walker.x && this.y === walker.y;
-    }
-
-    static get numMoves() {
-        return SkyWalker._numMoves;
-    }
 }
-SkyWalker._numMoves = 0;
 
-let walker1 = new SkyWalker(0, 0);
-let walker2 = new SkyWalker(5, 3);
+function rowSatisfyFilter(rowElement, filterData) {
+    let cells = rowElement.children;
+    /*
+    for (let cell of cells) {
+        let fieldName = cell.dataset.fieldName;
+        // проверить есть ли fieldName ключ  в filterData
+        if (filterData[fieldName]) {
 
-walker1.moveUp().moveRight().moveUp().moveRight();
-walker2.moveLeft().moveLeft().moveLeft().moveDown();
+            if (!cell.innerText.includes(filterData[fieldName])) {
+                return false;
+            }
+        }
+    }
+*/
+    return [].every.call(cells ,cell => {
+        let fieldName = cell.dataset.fieldName;
+        return filterData[fieldName] ? cell.innerText.includes(filterData[fieldName]) : true;
 
-console.log('x =', walker1.x, '; y =', walker1.y);
-//console.log('x =', walker2.x, '; y =', walker2.y);
-console.log('walker1 equals walker2:', walker1.equals(walker2));
+    });
 
-console.log(SkyWalker.numMoves);
+}

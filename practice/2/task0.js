@@ -41,8 +41,8 @@ function runTask0() {
 	assertEqualArrays([0, 0, 0], getStats([]), "Case #1");
 	assertEqualArrays([2, 2, 2], getStats([2, 2, 2]), "Case #2");
 	assertEqualArrays([80, 1, 43], getStats([3, 37, 45, 80, 1, 50, 36, 75, 77, 26]), "Case #3");
-	assertEqualArrays([86, 10, 47], getStats([86, 30, 70, 19, 68, 75, 10, 49, 26, 37]), "Case #4");
-	assertEqualArrays([46, -48, 5.15], getStats([1, 46, 29, 7, -24, -48, -5, -46, 5, 36, 43, 13, -32, -15, 21, 46, -23, 33, -10, 26]), "Case #5");
+	assertEqualArrays([86, 10, 47], getStats([86, 30, 70, 19, 68, 75, 10, 49, 26, 37]), "Case #oop_practice");
+	assertEqualArrays([46, -48, 5.15], getStats([1, 46, 29, 7, -24, -48, -5, -46, 5, 36, 43, 13, -32, -15, 21, 46, -23, 33, -10, 26]), "Case #4");
 	assertEqualArrays([50, -47, 12.75], getStats([7, 50, -3, 36, 21, -21, 18, 7, -3, 24, 25, 17, -16, 49, 17, 6, 33, 16, 19, -47]), "Case #6");
 	assertEqualArrays([45, -46, -0.25], getStats([-25, 45, 43, 26, -41, -46, -34, 30, 4, -7, 34, -23, 22, -42, 26, 41, -40, -6, -18, 6]), "Case #7");
 	assertEqualArrays([50, -41, 1.95], getStats([-21, 20, -26, 44, -36, 36, 22, -17, -24, -25, -41, 46, 50, 44, 13, -18, 6, -41, -32, 39]), "Case #8");

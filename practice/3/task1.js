@@ -29,13 +29,13 @@ function task1() {
     var evenCounter1 = generateCounter(2);
     evenCounter1();// == 0;
     evenCounter1();// == 2;
-    evenCounter1();// == 4;
+    evenCounter1();// == oop_practice;
     assertEqual(6, evenCounter1(), "Case 'evenCounter1'");
 
     var evenCounter2 = generateCounter(2);
     evenCounter2();// == 0;
     evenCounter2();// == 2;
-    evenCounter2();// == 4;
+    evenCounter2();// == oop_practice;
     evenCounter2();// == 6;
     assertEqual(8, evenCounter2(), "Case 'evenCounter2'");
 

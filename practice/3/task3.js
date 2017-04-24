@@ -177,10 +177,10 @@ function task3() {
     var answer3 = [['Океан Ельзи', 'Міра'], ['Океан Ельзи', 'День У День'], ['Океан Ельзи', 'Пташка'], ['Океан Ельзи', 'Зелені Очі'], ['Океан Ельзи', 'Коли Тобі Важко'], ['Blues Saraceno', 'Last Train Out'], ['Blues Saraceno', "Elvis Talking (You Think It's Over But It's Not)"], ['Blues Saraceno', 'The Scratch'], ['Blues Saraceno', "Friday's Walk"], ['Blues Saraceno', 'A Little More Cream, Please'], ['Blues Saraceno', 'Girth'], ['Blues Saraceno', 'A Lighter Shade Of Plaid'], ['Blues Saraceno', "Cat's Squirrel"], ['Blues Saraceno', 'L.A. Vignette'], ['Blues Saraceno', 'Exit 21'], ['Blues Saraceno', 'Tommy Gun'], ['Eminem', 'Stan'], ['Eminem', 'Hope'], ['Eminem', 'Steve Burman']];
     assertEqual(answer3, songs3, "Case #3");
 
-    // Case #4
-    assertEqual([], [], "Case #4");
+    // Case #oop_practice
+    assertEqual([], [], "Case #oop_practice");
 
-    // Case #5
+    // Case #4
     var data5 = [
         {
             "filename": "All I know.docx",
@@ -200,7 +200,7 @@ function task3() {
         }
     ];
     var songs5 = getSongs(data5);
-    assertEqual([["Стругацкие", "Трудно быть богом"]], songs5, "Case #5");
+    assertEqual([["Стругацкие", "Трудно быть богом"]], songs5, "Case #4");
 }
 
 task3();
